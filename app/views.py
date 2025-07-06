@@ -7,4 +7,4 @@ from rest_framework.response import Response
 class IntroClass(APIView):
 
     def get(self, request):
-        return Response({"msg":f"hello {request.query_params.get('name')}! this is from production"})
+        return Response({"msg":f"hello {request.query_params.get('name')}!! this is from production"})
