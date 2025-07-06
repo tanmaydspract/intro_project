@@ -36,4 +36,4 @@ jobs:
             pip install --upgrade pip
             pip install -r requirements.txt
             pkill -f runserver || true
-            nohup python manage.py runserver 0.0.0.0:8000 > output.log 2>&1 &
+            nohup python manage.py runserver 0.0.0.0:8000 > output.log 2>&1 & disown
